@@ -1,0 +1,46 @@
+{
+ "scenario":{"name":"Harbor Safety Monitoring System","context":"Fictional civilian harbor monitoring demonstrator. Supports operators with equipment health and environmental alerts.","stakeholders":["Harbor operator","Maintenance team","Safety assessor","System integrator"],"assumptions":["No autonomous control of physical equipment","Alerts require human acknowledgement","All signals are simulated"]},
+ "requirements":[
+  {"id":"REQ-001","title":"Sensor availability","statement":"The system shall display the health of each connected environmental sensor within 10 seconds of a status change.","priority":"High"},
+  {"id":"REQ-002","title":"Operator acknowledgement","statement":"The system shall allow an operator to acknowledge an active alert and record its timestamp.","priority":"High"},
+  {"id":"REQ-003","title":"Audit retention","statement":"The system shall retain alert acknowledgement records for at least 30 days.","priority":"Medium"},
+  {"id":"REQ-004","title":"Degraded mode","statement":"The system shall indicate degraded status when sensor input becomes unavailable.","priority":"High"},
+  {"id":"REQ-005","title":"Maintenance export","statement":"The system shall export a maintenance summary in a human-readable format.","priority":"Medium"},
+  {"id":"REQ-006","title":"Role permissions","statement":"The system shall restrict configuration changes to authorized maintenance roles.","priority":"High"}
+ ],
+ "components":[
+  {"id":"CMP-01","name":"Sensor adapter","description":"Normalizes fictional environmental sensor telemetry"},
+  {"id":"CMP-02","name":"Alert engine","description":"Evaluates thresholds and degraded input states"},
+  {"id":"CMP-03","name":"Operator console","description":"Displays alerts and acknowledgements"},
+  {"id":"CMP-04","name":"Event store","description":"Stores timestamped events and audit evidence"},
+  {"id":"CMP-05","name":"Access gateway","description":"Checks roles for configuration operations"}
+ ],
+ "tests":[
+  {"id":"TST-01","name":"Status update within 10 seconds","method":"Timed simulated sensor event"},
+  {"id":"TST-02","name":"Acknowledgement timestamp","method":"Functional acceptance test"},
+  {"id":"TST-03","name":"Retention policy verification","method":"Configuration and data lifecycle review"},
+  {"id":"TST-04","name":"Loss of sensor input","method":"Fault injection simulation"},
+  {"id":"TST-05","name":"Maintenance report export","method":"Export acceptance test"},
+  {"id":"TST-06","name":"Unauthorized configuration blocked","method":"Role-based negative test"}
+ ],
+ "risks":[
+  {"id":"RSK-01","name":"Stale sensor status shown as current","severity":4,"likelihood":3,"mitigation":"Timeout indicator and freshness timestamp"},
+  {"id":"RSK-02","name":"Alert acknowledgement not recorded","severity":4,"likelihood":2,"mitigation":"Durable audit event and retry handling"},
+  {"id":"RSK-03","name":"Unauthorized configuration change","severity":5,"likelihood":2,"mitigation":"Role checks and immutable audit records"},
+  {"id":"RSK-04","name":"Maintenance records unavailable","severity":3,"likelihood":2,"mitigation":"Backups and export validation"}
+ ],
+ "interfaces":[
+  {"id":"IF-01","from":"CMP-01","to":"CMP-02","name":"Sensor status events","contract":"timestamp, sensor_id, status"},
+  {"id":"IF-02","from":"CMP-02","to":"CMP-03","name":"Alert notifications","contract":"alert_id, severity, state"},
+  {"id":"IF-03","from":"CMP-03","to":"CMP-04","name":"Audit writes","contract":"actor, event, timestamp"},
+  {"id":"IF-04","from":"CMP-05","to":"CMP-03","name":"Role decisions","contract":"actor, permission, decision"}
+ ],
+ "links":[
+  {"from":"REQ-001","to":"CMP-01","type":"allocated_to"},{"from":"REQ-001","to":"CMP-03","type":"allocated_to"},{"from":"REQ-001","to":"TST-01","type":"verified_by"},{"from":"REQ-001","to":"RSK-01","type":"exposed_to"},
+  {"from":"REQ-002","to":"CMP-03","type":"allocated_to"},{"from":"REQ-002","to":"CMP-04","type":"allocated_to"},{"from":"REQ-002","to":"TST-02","type":"verified_by"},{"from":"REQ-002","to":"RSK-02","type":"exposed_to"},
+  {"from":"REQ-003","to":"CMP-04","type":"allocated_to"},{"from":"REQ-003","to":"TST-03","type":"verified_by"},{"from":"REQ-003","to":"RSK-04","type":"exposed_to"},
+  {"from":"REQ-004","to":"CMP-01","type":"allocated_to"},{"from":"REQ-004","to":"CMP-02","type":"allocated_to"},{"from":"REQ-004","to":"TST-04","type":"verified_by"},{"from":"REQ-004","to":"RSK-01","type":"exposed_to"},
+  {"from":"REQ-005","to":"CMP-04","type":"allocated_to"},{"from":"REQ-005","to":"TST-05","type":"verified_by"},{"from":"REQ-005","to":"RSK-04","type":"exposed_to"},
+  {"from":"REQ-006","to":"CMP-05","type":"allocated_to"},{"from":"REQ-006","to":"TST-06","type":"verified_by"},{"from":"REQ-006","to":"RSK-03","type":"exposed_to"}
+ ]
+}

@@ -1,0 +1,10 @@
+[
+{"question":"What is required before releasing to production?","expected_status":"grounded","expected_source":"KB-104"},
+{"question":"How should exposed credentials be handled?","expected_status":"grounded","expected_source":"KB-103"},
+{"question":"How do we measure retrieval quality?","expected_status":"grounded","expected_source":"KB-105"},
+{"question":"What controls apply to agent actions?","expected_status":"grounded","expected_source":"KB-108"},
+{"question":"How do we control personal data in retrieval?","expected_status":"grounded","expected_source":"KB-101"},
+{"question":"What is the office cafeteria menu tomorrow?","expected_status":"abstain"},
+{"question":"Who won the 2040 world cup?","expected_status":"abstain"},
+{"question":"What determines model operating cost?","expected_status":"grounded","expected_source":"KB-107"}
+]

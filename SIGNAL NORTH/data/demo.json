@@ -1,0 +1,113 @@
+{
+  "regions": [
+    {
+      "name": "Sweden",
+      "market": "Nordics",
+      "leads": 1260,
+      "mql": 690,
+      "sql": 300,
+      "wins": 84,
+      "revenue": 8.4,
+      "spend": 1.24,
+      "target": 9.2,
+      "cycle": 48
+    },
+    {
+      "name": "Norway",
+      "market": "Nordics",
+      "leads": 820,
+      "mql": 451,
+      "sql": 188,
+      "wins": 49,
+      "revenue": 5.1,
+      "spend": 0.82,
+      "target": 5.7,
+      "cycle": 54
+    },
+    {
+      "name": "Denmark",
+      "market": "Nordics",
+      "leads": 710,
+      "mql": 366,
+      "sql": 162,
+      "wins": 45,
+      "revenue": 4.7,
+      "spend": 0.68,
+      "target": 4.9,
+      "cycle": 51
+    },
+    {
+      "name": "Finland",
+      "market": "Nordics",
+      "leads": 630,
+      "mql": 312,
+      "sql": 136,
+      "wins": 36,
+      "revenue": 3.5,
+      "spend": 0.58,
+      "target": 4.0,
+      "cycle": 61
+    },
+    {
+      "name": "Poland",
+      "market": "Europe",
+      "leads": 980,
+      "mql": 509,
+      "sql": 214,
+      "wins": 54,
+      "revenue": 4.2,
+      "spend": 0.71,
+      "target": 4.6,
+      "cycle": 44
+    },
+    {
+      "name": "Germany",
+      "market": "Europe",
+      "leads": 1050,
+      "mql": 493,
+      "sql": 204,
+      "wins": 43,
+      "revenue": 5.6,
+      "spend": 1.18,
+      "target": 6.5,
+      "cycle": 70
+    }
+  ],
+  "channels": [
+    {
+      "name": "Organic search",
+      "leads": 1530,
+      "spend": 0.52,
+      "wins": 88,
+      "color": "#B9F16A"
+    },
+    {
+      "name": "Paid search",
+      "leads": 1190,
+      "spend": 1.41,
+      "wins": 69,
+      "color": "#8EA5FF"
+    },
+    {
+      "name": "Events",
+      "leads": 880,
+      "spend": 1.12,
+      "wins": 58,
+      "color": "#FF9F7B"
+    },
+    {
+      "name": "Partner referrals",
+      "leads": 1040,
+      "spend": 0.61,
+      "wins": 73,
+      "color": "#D6ACFF"
+    },
+    {
+      "name": "Social",
+      "leads": 810,
+      "spend": 0.55,
+      "wins": 23,
+      "color": "#6AD8C4"
+    }
+  ]
+}

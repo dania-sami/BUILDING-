@@ -1,0 +1,8 @@
+name: polaris
+version: "1.0"
+config-version: 2
+profile: polaris
+model-paths: ["models"]
+models:
+  polaris:
+    +materialized: view

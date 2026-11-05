@@ -1,0 +1,14 @@
+version: 2
+sources:
+  - name: insurance
+    database: POLARIS
+    schema: RAW
+    tables:
+      - name: raw_claims
+models:
+  - name: stg_claims
+    columns:
+      - name: claim_id
+        tests: [not_null, unique]
+      - name: policy_id
+        tests: [not_null]

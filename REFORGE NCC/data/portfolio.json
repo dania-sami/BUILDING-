@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "id": "RF-101",
+      "name": "Urban Loop 25",
+      "rap": 25,
+      "binder": 5.2,
+      "virgin": 68,
+      "rap_cost": 19,
+      "binder_cost": 690,
+      "aggregate_cost": 27,
+      "transport": 11,
+      "energy": 8,
+      "lab": {
+        "stability": 12.4,
+        "flow": 3.1,
+        "voids": 4.0,
+        "moisture": 86,
+        "rutting": 4.2
+      },
+      "status": "Review",
+      "owner": "Materials Lab",
+      "segment": "Urban streets"
+    },
+    {
+      "id": "RF-102",
+      "name": "Nordic Reuse 40",
+      "rap": 40,
+      "binder": 5.6,
+      "virgin": 54,
+      "rap_cost": 19,
+      "binder_cost": 690,
+      "aggregate_cost": 27,
+      "transport": 13,
+      "energy": 9,
+      "lab": {
+        "stability": 11.7,
+        "flow": 3.6,
+        "voids": 4.8,
+        "moisture": 79,
+        "rutting": 6.1
+      },
+      "status": "Needs validation",
+      "owner": "Innovation",
+      "segment": "Local roads"
+    },
+    {
+      "id": "RF-103",
+      "name": "Resilient Base 15",
+      "rap": 15,
+      "binder": 4.9,
+      "virgin": 80,
+      "rap_cost": 19,
+      "binder_cost": 690,
+      "aggregate_cost": 27,
+      "transport": 9,
+      "energy": 7,
+      "lab": {
+        "stability": 13.3,
+        "flow": 2.8,
+        "voids": 3.6,
+        "moisture": 90,
+        "rutting": 3.5
+      },
+      "status": "Review",
+      "owner": "Product Development",
+      "segment": "Regional roads"
+    }
+  ],
+  "briefs": [
+    {
+      "id": "BR-01",
+      "customer": "Municipal road authority",
+      "need": "Lower embodied carbon for a local road resurfacing project",
+      "volume": 8500,
+      "maxCost": 88,
+      "minRAP": 25,
+      "maxRutting": 5.0,
+      "minMoisture": 82,
+      "due": "2026-12-15"
+    },
+    {
+      "id": "BR-02",
+      "customer": "Infrastructure contractor",
+      "need": "Durable surface with robust moisture resistance",
+      "volume": 12000,
+      "maxCost": 94,
+      "minRAP": 15,
+      "maxRutting": 4.0,
+      "minMoisture": 88,
+      "due": "2027-01-20"
+    }
+  ],
+  "assumptions": {
+    "baselineCo2": 52,
+    "virginFactor": 0.028,
+    "rapFactor": 0.009,
+    "binderFactor": 0.42,
+    "energyFactor": 0.65,
+    "transportFactor": 0.22
+  }
+}

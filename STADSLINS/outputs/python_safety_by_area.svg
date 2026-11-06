@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450">
+<rect width="900" height="450" fill="#fafaf8"/>
+<text x="450" y="35" text-anchor="middle" font-size="21" font-family="Arial" fill="#182c36">Synthetic perceived safety by area</text>
+<line x1="90" y1="335" x2="840" y2="335" stroke="#d8e0e2"/>
+<text x="70" y="340" text-anchor="end" font-size="15" font-family="Arial">1</text>
+<line x1="90" y1="272" x2="840" y2="272" stroke="#d8e0e2"/>
+<text x="70" y="277" text-anchor="end" font-size="15" font-family="Arial">2</text>
+<line x1="90" y1="209" x2="840" y2="209" stroke="#d8e0e2"/>
+<text x="70" y="214" text-anchor="end" font-size="15" font-family="Arial">3</text>
+<line x1="90" y1="146" x2="840" y2="146" stroke="#d8e0e2"/>
+<text x="70" y="151" text-anchor="end" font-size="15" font-family="Arial">4</text>
+<line x1="90" y1="83" x2="840" y2="83" stroke="#d8e0e2"/>
+<text x="70" y="88" text-anchor="end" font-size="15" font-family="Arial">5</text>
+<line x1="175" y1="83" x2="175" y2="335" stroke="#243744" stroke-width="3"/>
+<rect x="132" y="146.0" width="86" height="63.0" fill="#5c9eac" stroke="#243744" stroke-width="2"/>
+<line x1="132" y1="209.0" x2="218" y2="209.0" stroke="#243744" stroke-width="3"/>
+<text x="175" y="382" text-anchor="middle" font-size="16" font-family="Arial">Sodermalm</text>
+<line x1="350" y1="83" x2="350" y2="335" stroke="#243744" stroke-width="3"/>
+<rect x="307" y="146.0" width="86" height="126.0" fill="#b9d9b6" stroke="#243744" stroke-width="2"/>
+<line x1="307" y1="209.0" x2="393" y2="209.0" stroke="#243744" stroke-width="3"/>
+<text x="350" y="382" text-anchor="middle" font-size="16" font-family="Arial">Solna</text>
+<line x1="525" y1="83" x2="525" y2="335" stroke="#243744" stroke-width="3"/>
+<rect x="482" y="146.0" width="86" height="126.0" fill="#f4c47e" stroke="#243744" stroke-width="2"/>
+<line x1="482" y1="209.0" x2="568" y2="209.0" stroke="#243744" stroke-width="3"/>
+<text x="525" y="382" text-anchor="middle" font-size="16" font-family="Arial">Kista</text>
+<line x1="700" y1="83" x2="700" y2="335" stroke="#243744" stroke-width="3"/>
+<rect x="657" y="146.0" width="86" height="63.0" fill="#b7a7e4" stroke="#243744" stroke-width="2"/>
+<line x1="657" y1="209.0" x2="743" y2="209.0" stroke="#243744" stroke-width="3"/>
+<text x="700" y="382" text-anchor="middle" font-size="16" font-family="Arial">Ostermalm</text>
+<text x="450" y="425" text-anchor="middle" font-size="14" font-family="Arial" fill="#586a75">Fictional demonstration data. Not empirical findings.</text></svg>

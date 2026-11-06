@@ -1,0 +1,31 @@
+{
+  "dataset": "synthetic demonstration only",
+  "valid": 240,
+  "rejected": 0,
+  "areas": [
+    {
+      "area": "Sodermalm",
+      "n": 60,
+      "mean_safety": 3.22,
+      "mean_lighting": 2.82
+    },
+    {
+      "area": "Solna",
+      "n": 60,
+      "mean_safety": 3.05,
+      "mean_lighting": 2.93
+    },
+    {
+      "area": "Kista",
+      "n": 60,
+      "mean_safety": 3.23,
+      "mean_lighting": 3.22
+    },
+    {
+      "area": "Ostermalm",
+      "n": 60,
+      "mean_safety": 3.32,
+      "mean_lighting": 2.97
+    }
+  ]
+}

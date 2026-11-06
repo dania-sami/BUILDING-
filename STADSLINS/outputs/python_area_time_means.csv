@@ -1,0 +1,9 @@
+area,time,n,mean_safety,mean_lighting,mean_activity,mean_maintenance
+Kista,day,29,3.483,3.276,2.69,3.241
+Kista,evening,31,3,3.161,3.258,2.71
+Ostermalm,day,32,3.812,3.344,3.031,2.812
+Ostermalm,evening,28,2.75,2.536,2.714,3.321
+Sodermalm,day,27,3.222,2.593,2.63,3.296
+Sodermalm,evening,33,3.212,3,2.758,3.212
+Solna,day,29,3.345,2.897,2.759,2.931
+Solna,evening,31,2.774,2.968,2.839,2.903

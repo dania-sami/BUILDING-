@@ -1,0 +1,16 @@
+{
+  "notice": "Synthetic demonstration only; ordinal outcome modeled as numeric for illustration.",
+  "n": 240,
+  "r_squared": 0.46434,
+  "rmse": 0.84378,
+  "coefficients": {
+    "intercept": 0.90024,
+    "lighting": 0.40722,
+    "activity": 0.27179,
+    "maintenance": 0.22044,
+    "evening": -0.51059,
+    "Solna": -0.18489,
+    "Kista": -0.17779,
+    "Ostermalm": -0.00937
+  }
+}

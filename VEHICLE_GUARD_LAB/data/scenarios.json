@@ -1,0 +1,117 @@
+[
+  {
+    "id": "IR-1042",
+    "title": "Telematics gateway diagnostic service exposed",
+    "component": "Telematics Gateway",
+    "fleet": "Nordic long-haul",
+    "cvss": 9.1,
+    "exposure": 5,
+    "safety": 4,
+    "confidence": 4,
+    "status": "New",
+    "summary": "Simulated anomalous diagnostic traffic following a gateway configuration change. No verified compromise.",
+    "signals": [
+      "Unusual diagnostic session rate",
+      "Gateway software build mismatch",
+      "Network telemetry gap"
+    ],
+    "actions": [
+      "Validate asset inventory",
+      "Preserve signed diagnostic logs",
+      "Coordinate with gateway engineering",
+      "Review containment with vehicle safety"
+    ]
+  },
+  {
+    "id": "IR-1043",
+    "title": "OTA package signature validation anomaly",
+    "component": "OTA Update Client",
+    "fleet": "Urban delivery",
+    "cvss": 8.2,
+    "exposure": 3,
+    "safety": 5,
+    "confidence": 3,
+    "status": "Investigating",
+    "summary": "Synthetic validation failures during a staged update; root cause unknown.",
+    "signals": [
+      "Signature validation errors",
+      "Rollback event",
+      "Update metadata discrepancy"
+    ],
+    "actions": [
+      "Freeze affected rollout cohort",
+      "Verify package signing chain",
+      "Compare build provenance",
+      "Document recovery criteria"
+    ]
+  },
+  {
+    "id": "IR-1044",
+    "title": "Fleet API credential reuse indicator",
+    "component": "Fleet Cloud API",
+    "fleet": "Connected services",
+    "cvss": 7.4,
+    "exposure": 5,
+    "safety": 2,
+    "confidence": 5,
+    "status": "New",
+    "summary": "Simulated suspicious token reuse from geographically distinct clients.",
+    "signals": [
+      "Token reuse",
+      "API rate increase",
+      "Unusual user-agent"
+    ],
+    "actions": [
+      "Revoke test credentials",
+      "Review token scope",
+      "Preserve access logs",
+      "Notify platform owner"
+    ]
+  },
+  {
+    "id": "IR-1045",
+    "title": "Infotainment third-party library advisory",
+    "component": "Infotainment ECU",
+    "fleet": "Mixed fleet",
+    "cvss": 6.5,
+    "exposure": 2,
+    "safety": 2,
+    "confidence": 4,
+    "status": "Monitoring",
+    "summary": "Synthetic component advisory awaiting version applicability confirmation.",
+    "signals": [
+      "Library version uncertain",
+      "SBOM match candidate",
+      "No exploitation evidence"
+    ],
+    "actions": [
+      "Verify SBOM version",
+      "Map software release cohorts",
+      "Request supplier advisory",
+      "Record non-applicability evidence"
+    ]
+  },
+  {
+    "id": "IR-1046",
+    "title": "Charging controller unexpected restart",
+    "component": "Charging ECU",
+    "fleet": "Electric fleet",
+    "cvss": 7.8,
+    "exposure": 2,
+    "safety": 5,
+    "confidence": 2,
+    "status": "Investigating",
+    "summary": "Synthetic repeated restarts requiring joint safety and cybersecurity investigation.",
+    "signals": [
+      "Restart sequence",
+      "Watchdog activation",
+      "Sparse field logs"
+    ],
+    "actions": [
+      "Preserve controller logs",
+      "Engage functional safety",
+      "Compare firmware versions",
+      "Assess operational containment"
+    ]
+  }
+]
